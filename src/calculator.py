@@ -54,25 +54,5 @@ class Calculator():
         self.value = fact
         return self.value
 
-    def menu(self):
-        print("Calculadora")
-        print("1. Suma")
-        print("2. Resta")
-        print("3. Multiplicación")
-        print("4. División")
-        print("5. Raíz cuadrada")
-        print("6. Potencia")
-        print("7. Seno")
-        print("8. Coseno")
-        print("9. Tangente")
-        print("10. Factorial")
-        print("11. Salir")
-
-        try:
-            opcion = int(input("Seleccione una opción: "))
-        except ValueError:
-            return "Error: Opción inválida, debe ser un número entero."
-        return opcion
-
     def __str__(self):
         return str(self.value)
